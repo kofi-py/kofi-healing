@@ -1,0 +1,95 @@
+/* src/app/scriptures/ScripturesPage.module.css */
+.page { min-height: 100vh; }
+
+.header { background: linear-gradient(160deg, #1E3A5F, #1E40AF); padding: 3rem 2rem 2.5rem; border-bottom: 3px solid rgba(255,255,255,0.1); }
+.back { font-size: 12px; color: rgba(255,255,255,0.5); display: inline-block; margin-bottom: 1rem; transition: color 0.2s; }
+.back:hover { color: #fff; }
+.eyebrow { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 10px; }
+.title { font-family: 'Cormorant Garamond', serif; font-size: clamp(30px, 5vw, 50px); font-weight: 300; color: #fff; margin-bottom: 10px; line-height: 1.2; }
+.sub { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 520px; }
+
+.filterBar { background: var(--white); border-bottom: 1px solid var(--border); padding: 14px 2rem; overflow-x: auto; }
+.filterInner { display: flex; gap: 8px; max-width: 1000px; margin: 0 auto; }
+
+.filterBtn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+  background: var(--off-white);
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.filterBtn:hover { border-color: var(--blue); color: var(--blue); }
+.filterActive { background: var(--blue-dark); color: #fff; border-color: var(--blue-dark); }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem; }
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s;
+}
+.card:hover { border-color: var(--blue); box-shadow: 0 8px 24px rgba(59,130,246,0.08); }
+
+.cardTop { display: flex; justify-content: space-between; align-items: center; }
+
+.theme {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  background: var(--sky-mid);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.ref { font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--text-muted); }
+
+.verse {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.75;
+  border-left: 3px solid var(--blue);
+  padding-left: 14px;
+  flex: 1;
+}
+
+.note { font-size: 13px; color: var(--text-soft); line-height: 1.65; }
+
+.prayBtn {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--blue-dark);
+  background: var(--sky);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  border-radius: 20px;
+  align-self: flex-start;
+  transition: all 0.2s;
+}
+.prayBtn:hover { background: var(--sky-mid); border-color: var(--blue); }
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #1E3A5F, #1E40AF);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+.ctaLabel { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 12px; }
+.ctaTitle { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 3vw, 32px); font-weight: 300; color: #fff; margin-bottom: 1.75rem; line-height: 1.3; }
+.ctaBtn { display: inline-block; background: #fff; color: var(--blue-dark); font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; padding: 13px 28px; border-radius: 6px; transition: all 0.2s; }
+.ctaBtn:hover { background: var(--sky); transform: translateY(-1px); }

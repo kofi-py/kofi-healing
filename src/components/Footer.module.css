@@ -1,0 +1,13 @@
+/* src/components/Footer.module.css */
+.footer { background: var(--blue-deep); border-top: 3px solid var(--blue); margin-top: auto; }
+.inner { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem 2rem; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2.5rem; }
+.brandName { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: #fff; display: block; margin-bottom: 10px; }
+.brandDesc { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.4); line-height: 1.7; margin-bottom: 12px; max-width: 280px; }
+.verse { font-family: 'Lora', serif; font-style: italic; font-size: 12px; color: rgba(255,255,255,0.3); line-height: 1.6; }
+.col { display: flex; flex-direction: column; gap: 10px; }
+.colLabel { font-family: 'DM Sans', sans-serif; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 4px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.col a { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.4); transition: color 0.2s; }
+.col a:hover { color: rgba(255,255,255,0.8); }
+.bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 1.25rem 2rem; max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; font-family: 'DM Sans', sans-serif; font-size: 11px; color: rgba(255,255,255,0.25); }
+.tag { color: var(--gold-light); opacity: 0.6; }
+@media (max-width: 700px) { .inner { grid-template-columns: 1fr; } .bottom { flex-direction: column; gap: 6px; text-align: center; } }

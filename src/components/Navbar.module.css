@@ -1,0 +1,15 @@
+/* src/components/Navbar.module.css */
+.nav { background: var(--white); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 60px; position: sticky; top: 0; z-index: 100; }
+.brand { display: flex; flex-direction: column; gap: 1px; }
+.brandName { font-family: 'Cormorant Garamond', serif; font-size: 17px; color: var(--blue-deep); font-weight: 600; }
+.brandSub { font-family: 'DM Sans', sans-serif; font-size: 10px; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; }
+.links { display: flex; gap: 20px; align-items: center; }
+.links a { font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--text-soft); transition: color 0.2s; }
+.links a:hover { color: var(--blue-dark); }
+.cta { background: var(--blue-dark) !important; color: #fff !important; padding: 8px 18px; border-radius: 6px; font-size: 13px !important; }
+.cta:hover { background: var(--blue) !important; }
+.burger { display: none; flex-direction: column; gap: 4px; background: none; border: none; padding: 4px; }
+.burger span { display: block; width: 20px; height: 1.5px; background: var(--text); }
+.mobile { position: absolute; top: 60px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); display: flex; flex-direction: column; padding: 1rem 2rem; gap: 14px; }
+.mobile a { font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text-soft); }
+@media (max-width: 700px) { .links { display: none; } .burger { display: flex; } }

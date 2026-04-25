@@ -1,0 +1,44 @@
+.page { min-height: 100vh; }
+.hero { background: linear-gradient(160deg, #1E3A5F 0%, #1E40AF 50%, #2563EB 100%); padding: 5rem 2rem 0; position: relative; overflow: hidden; text-align: center; }
+.hero::before { content: ''; position: absolute; top: -60px; right: -80px; width: 400px; height: 400px; background: rgba(255,255,255,0.04); border-radius: 50%; }
+.heroInner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; padding-bottom: 4rem; }
+.eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-bottom: 1.25rem; }
+.heroTitle { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 7vw, 76px); font-weight: 300; color: #fff; line-height: 1.1; margin-bottom: 1.25rem; }
+.heroSub { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.75; margin-bottom: 2.25rem; max-width: 520px; margin-left: auto; margin-right: auto; }
+.heroBtns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btnPrimary { background: #fff; color: var(--blue-dark); font-size: 14px; font-weight: 500; padding: 13px 28px; border-radius: 6px; transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+.btnPrimary:hover { background: var(--sky); transform: translateY(-1px); }
+.btnSecondary { background: rgba(255,255,255,0.12); color: #fff; font-size: 14px; padding: 13px 28px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.25); transition: all 0.2s; font-family: 'DM Sans', sans-serif; }
+.btnSecondary:hover { background: rgba(255,255,255,0.2); }
+.heroWave { width: 100%; line-height: 0; margin-top: -1px; }
+.heroWave svg { width: 100%; height: 80px; }
+.ticker { background: var(--sky-mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: hidden; padding: 14px 0; }
+.tickerTrack { display: flex; white-space: nowrap; animation: ticker 30s linear infinite; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.tickerItem { font-family: 'Lora', serif; font-style: italic; font-size: 14px; color: var(--text-mid); padding: 0 2rem; flex-shrink: 0; }
+.tickerRef { font-family: 'DM Sans', sans-serif; font-style: normal; font-size: 12px; color: var(--blue); }
+.tickerDot { margin-left: 1rem; color: var(--border-mid); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+.sectionLabel { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+.sectionTitle { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 42px); font-weight: 400; color: var(--text); margin-bottom: 3rem; line-height: 1.25; }
+.how { padding: 5rem 0; background: var(--white); }
+.steps { display: flex; align-items: flex-start; gap: 0; }
+.step { flex: 1; text-align: center; padding: 0 1.5rem; }
+.stepNum { width: 48px; height: 48px; background: var(--sky-mid); border: 2px solid var(--blue); color: var(--blue-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 500; margin: 0 auto 1rem; }
+.step h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--text); margin-bottom: 8px; font-weight: 600; }
+.step p { font-size: 14px; color: var(--text-soft); line-height: 1.7; }
+.stepLine { width: 60px; height: 1px; background: var(--border-mid); flex-shrink: 0; margin-top: 24px; }
+.cards { padding: 5rem 0; background: var(--off-white); }
+.cardGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.card { display: block; background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.75rem; transition: all 0.2s; }
+.card:hover { border-color: var(--blue); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(59,130,246,0.1); }
+.cardIcon { font-size: 32px; margin-bottom: 1rem; }
+.cardTitle { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text); margin-bottom: 10px; line-height: 1.3; }
+.cardDesc { font-size: 14px; color: var(--text-soft); line-height: 1.7; margin-bottom: 1.25rem; }
+.cardLink { font-size: 13px; color: var(--blue); font-weight: 500; }
+.featured { background: linear-gradient(135deg, #1E3A5F, #1E40AF); padding: 5rem 2rem; text-align: center; }
+.featuredInner { max-width: 680px; margin: 0 auto; }
+.featuredLabel { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 1.5rem; }
+.featuredVerse { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(20px, 3vw, 28px); color: #fff; line-height: 1.65; margin-bottom: 1rem; font-weight: 300; }
+.featuredRef { font-size: 14px; color: var(--gold-light); letter-spacing: 0.06em; font-style: normal; }
+@media (max-width: 768px) { .steps { flex-direction: column; align-items: center; } .stepLine { width: 1px; height: 30px; } .cardGrid { grid-template-columns: 1fr; } }
