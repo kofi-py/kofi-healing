@@ -81,6 +81,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── About Pastor Kofi ── */}
+      <section className={styles.about}>
+        <div className={styles.container}>
+          <div className={styles.aboutGrid}>
+
+            <div className={styles.aboutPhoto}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/pastor-kofi.jpg"
+                alt="Pastor Kofi"
+                className={styles.aboutImg}
+              />
+              <div className={styles.aboutPhotoAccent} />
+            </div>
+
+            <div className={styles.aboutText}>
+              <p className={styles.sectionLabel}>About</p>
+              <h2 className={styles.aboutName}>Pastor Kofi</h2>
+              <div className={styles.aboutDivider} />
+              <p className={styles.aboutBio}>
+                Pastor Kofi is a minister, musician, and intercessor with a heart
+                for those who are hurting. Born out of his own season of waiting
+                on God for breakthrough, this ministry exists to remind you that
+                healing is not just possible — it is promised.
+              </p>
+              <p className={styles.aboutBio}>
+                Every prayer request submitted here is read personally by Pastor Kofi.
+                He prays over each one by name, searches the scriptures for your
+                specific need, and responds with a word of faith. No request is
+                too small. No situation is too far gone.
+              </p>
+              <blockquote className={styles.aboutQuote}>
+                "I believe God still heals today — bodies, hearts, families, and
+                futures. That's why I'm here."
+              </blockquote>
+              <Link href="/request" className={styles.aboutBtn}>
+                Submit Your Prayer Request →
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* ── Three cards ── */}
       <section className={styles.cards}>
         <div className={styles.container}>

@@ -28,6 +28,72 @@
 .step h3 { font-family: var(--font-cormorant), serif; font-size: 20px; color: var(--text); margin-bottom: 8px; font-weight: 600; }
 .step p { font-size: 14px; color: var(--text-soft); line-height: 1.7; }
 .stepLine { width: 60px; height: 1px; background: var(--border-mid); flex-shrink: 0; margin-top: 24px; }
+/* ── About ── */
+.about { padding: 5rem 0; background: #FBF7EF; }
+.aboutGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+
+.aboutPhoto { position: relative; }
+.aboutImg { width: 100%; height: auto; border-radius: 4px; display: block; object-fit: cover; position: relative; z-index: 1; }
+.aboutPhotoAccent {
+  position: absolute;
+  inset: 16px -16px -16px 16px;
+  border: 2px solid var(--gold-light);
+  border-radius: 4px;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.aboutText { display: flex; flex-direction: column; gap: 0; }
+.aboutName {
+  font-family: var(--font-cormorant), serif;
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+.aboutDivider {
+  width: 48px;
+  height: 2px;
+  background: var(--gold-light);
+  margin-bottom: 1.5rem;
+}
+.aboutBio {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.85;
+  margin-bottom: 1.1rem;
+}
+.aboutQuote {
+  font-family: var(--font-lora), serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--blue-deep);
+  border-left: 3px solid var(--gold-light);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0 2rem;
+  line-height: 1.7;
+}
+.aboutBtn {
+  display: inline-block;
+  background: var(--blue-deep);
+  color: #fff;
+  font-family: var(--font-dm-sans), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 13px 26px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  align-self: flex-start;
+}
+.aboutBtn:hover { background: var(--blue-dark); transform: translateY(-1px); }
+
+@media (max-width: 768px) {
+  .aboutGrid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .aboutPhotoAccent { display: none; }
+  .aboutImg { max-height: 420px; object-fit: cover; object-position: top; }
+}
+
 .cards { padding: 5rem 0; background: var(--off-white); }
 .cardGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .card { display: block; background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 2rem 1.75rem; transition: all 0.2s; }
