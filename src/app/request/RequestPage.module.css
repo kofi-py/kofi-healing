@@ -15,7 +15,7 @@
 .eyebrow { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 10px; }
 
 .title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-cormorant), serif;
   font-size: clamp(30px, 5vw, 50px);
   font-weight: 300;
   color: #fff;
@@ -47,7 +47,7 @@
 }
 
 .legend {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-cormorant), serif;
   font-size: 18px;
   font-weight: 600;
   color: var(--text);
@@ -74,7 +74,7 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   font-size: 14px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   background: var(--off-white);
   color: var(--text);
   transition: border-color 0.2s;
@@ -164,7 +164,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: all 0.2s;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
 }
 
 .submitBtn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(30,64,175,0.3); }
@@ -186,7 +186,7 @@
 .asideIcon { font-size: 22px; margin-bottom: 8px; }
 
 .asideCard h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-cormorant), serif;
   font-size: 17px;
   font-weight: 600;
   color: var(--text);
@@ -202,7 +202,7 @@
 }
 
 .asideVerse p {
-  font-family: 'Lora', serif;
+  font-family: var(--font-lora), serif;
   font-style: italic;
   font-size: 14px;
   color: rgba(255,255,255,0.85);
@@ -234,7 +234,7 @@
 .successIcon { font-size: 48px; margin-bottom: 1.25rem; }
 
 .successCard h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-cormorant), serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--text);
@@ -253,7 +253,7 @@
 }
 
 .successVerse, .successVerse p {
-  font-family: 'Lora', serif;
+  font-family: var(--font-lora), serif;
   font-style: italic;
   font-size: 14px;
   color: var(--text-mid);
@@ -261,14 +261,14 @@
   margin-bottom: 6px;
 }
 
-.successVerse cite { font-size: 12px; color: var(--blue); font-style: normal; font-family: 'DM Sans', sans-serif; }
+.successVerse cite { font-size: 12px; color: var(--blue); font-style: normal; font-family: var(--font-dm-sans), sans-serif; }
 
 .successBtns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 
 .btnBlue {
   background: var(--blue-dark);
   color: #fff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   font-size: 14px;
   padding: 11px 24px;
   border-radius: 6px;
@@ -279,7 +279,7 @@
 .btnGhost {
   border: 1px solid var(--border);
   color: var(--text-soft);
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), sans-serif;
   font-size: 14px;
   padding: 11px 24px;
   border-radius: 6px;
