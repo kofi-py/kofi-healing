@@ -179,6 +179,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Testimonials ── */}
+      <section className={styles.testimonials}>
+        <div className={styles.container}>
+          <div className={styles.testimonialInvite}>
+            <div className={styles.testimonialInviteText}>
+              <p className={styles.sectionLabel}>Healing Stories</p>
+              <h2 className={styles.testimonialInviteTitle}>
+                Has God Moved in Your Situation?
+              </h2>
+              <p className={styles.testimonialInviteDesc}>
+                If Pastor Kofi has prayed for you and you have experienced healing —
+                physical, emotional, or spiritual — we would love to hear your story.
+                Your testimony could be the faith someone else needs to take their
+                first step and submit their own request.
+              </p>
+            </div>
+            <a
+              href="mailto:pastorkofi101@gmail.com?subject=My Healing Testimony&body=Hi Pastor Kofi,%0A%0AI wanted to share what God has done:%0A%0A"
+              className={styles.testimonialCtaBtn}
+            >
+              Share Your Testimony
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── Featured scripture ── */}
       <section className={styles.featured}>
         <div className={styles.featuredInner}>

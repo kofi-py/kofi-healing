@@ -127,15 +127,39 @@
   text-align: center;
 }
 
-.urgencyBtn:hover { border-color: var(--blue); }
+/* ── Idle border tints so levels are distinguishable before clicking ── */
+.urgencyBtn[data-level="Urgent"]   { border-color: #FCD34D; }
+.urgencyBtn[data-level="Critical"] { border-color: #FCA5A5; }
 
-.urgencyActive {
+/* ── Hover ── */
+.urgencyBtn[data-level="Standard"]:hover { border-color: var(--blue); }
+.urgencyBtn[data-level="Urgent"]:hover   { border-color: #D97706; }
+.urgencyBtn[data-level="Critical"]:hover { border-color: #DC2626; }
+
+/* ── Active / selected states ── */
+.urgencyBtn[data-level="Standard"].urgencyActive {
   background: var(--sky-mid);
   border-color: var(--blue);
   border-width: 2px;
 }
+.urgencyBtn[data-level="Urgent"].urgencyActive {
+  background: #FEF3C7;
+  border-color: #D97706;
+  border-width: 2px;
+}
+.urgencyBtn[data-level="Critical"].urgencyActive {
+  background: #FEE2E2;
+  border-color: #DC2626;
+  border-width: 2px;
+}
 
-.urgencyVal { font-size: 13px; font-weight: 500; color: var(--text); }
+/* ── Text colors when active ── */
+.urgencyBtn[data-level="Urgent"].urgencyActive   .urgencyVal { color: #92400E; }
+.urgencyBtn[data-level="Critical"].urgencyActive .urgencyVal { color: #991B1B; }
+.urgencyBtn[data-level="Urgent"].urgencyActive   .urgencyDesc { color: #B45309; }
+.urgencyBtn[data-level="Critical"].urgencyActive .urgencyDesc { color: #B91C1C; }
+
+.urgencyVal  { font-size: 13px; font-weight: 500; color: var(--text); }
 .urgencyDesc { font-size: 11px; color: var(--text-muted); }
 
 /* Checkbox */

@@ -140,6 +140,7 @@ export default function RequestPage() {
                   { val: 'Critical', desc: 'Emergency / life-threatening' },
                 ].map(opt => (
                   <button type="button" key={opt.val}
+                    data-level={opt.val}
                     className={`${styles.urgencyBtn} ${form.urgency === opt.val ? styles.urgencyActive : ''}`}
                     onClick={() => setForm(p => ({ ...p, urgency: opt.val }))}>
                     <span className={styles.urgencyVal}>{opt.val}</span>
@@ -166,7 +167,7 @@ export default function RequestPage() {
           </div>
 
           <button type="submit" className={styles.submitBtn} disabled={status === 'sending'}>
-            {status === 'sending' ? 'Sending your request...' : 'Send Prayer Request to Pastor Kofi 🙏'}
+            {status === 'sending' ? 'Sending your request...' : 'Send My Request to Pastor Kofi'}
           </button>
 
           {status === 'error' && (

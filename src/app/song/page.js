@@ -146,7 +146,7 @@ export default function SongPage() {
           </div>
 
           <button type="submit" className={styles.submitBtn} disabled={status === 'sending'}>
-            {status === 'sending' ? 'Sending your request...' : '🎵 Request My Healing Song'}
+            {status === 'sending' ? 'Sending your request...' : 'Send My Song Request to Pastor Kofi'}
           </button>
 
           {status === 'error' && (
