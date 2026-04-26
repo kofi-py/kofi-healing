@@ -38,7 +38,7 @@ export default function RequestPage() {
           condition:   form.condition,
           urgency:     form.urgency,
           message:     form.message,
-          to_email:    'pastorkofi101@gmail.com',
+          to_email:    'pastor.kofi.101@gmail.com',
           type:        'Healing Prayer Request',
         },
         EMAILJS_PUBLIC_KEY
@@ -172,7 +172,7 @@ export default function RequestPage() {
 
           {status === 'error' && (
             <p className={styles.errorMsg}>
-              Something went wrong. Please email <a href="mailto:pastorkofi101@gmail.com">pastorkofi101@gmail.com</a> directly.
+              Something went wrong. Please email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pastor.kofi.101@gmail.com" target="_blank" rel="noopener noreferrer">pastor.kofi.101@gmail.com</a> directly.
             </p>
           )}
         </form>

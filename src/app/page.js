@@ -196,7 +196,9 @@ export default function HomePage() {
               </p>
             </div>
             <a
-              href="mailto:pastorkofi101@gmail.com?subject=My Healing Testimony&body=Hi Pastor Kofi,%0A%0AI wanted to share what God has done:%0A%0A"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=pastor.kofi.101@gmail.com&su=My%20Healing%20Testimony&body=Hi%20Pastor%20Kofi,%0A%0AI%20wanted%20to%20share%20what%20God%20has%20done:%0A%0A"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.testimonialCtaBtn}
             >
               Share Your Testimony

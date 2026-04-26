@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
         <div className={styles.col}>
           <div className={styles.colLabel}>Connect</div>
-          <a href="mailto:pastorkofi101@gmail.com">pastorkofi101@gmail.com</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pastor.kofi.101@gmail.com" target="_blank" rel="noopener noreferrer">pastor.kofi.101@gmail.com</a>
           <a href="https://pastorkofi101.podbean.com" target="_blank" rel="noreferrer">Bible Essentials Podcast</a>
         </div>
       </div>

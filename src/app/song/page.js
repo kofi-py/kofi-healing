@@ -34,7 +34,7 @@ export default function SongPage() {
           mood:       form.mood,
           details:    form.details,
           language:   form.language,
-          to_email:   'pastorkofi101@gmail.com',
+          to_email:   'pastor.kofi.101@gmail.com',
           type:       'Healing Song Request',
         },
         EMAILJS_PUBLIC_KEY
@@ -151,7 +151,7 @@ export default function SongPage() {
 
           {status === 'error' && (
             <p className={styles.errorMsg}>
-              Something went wrong. Please email <a href="mailto:pastorkofi101@gmail.com">pastorkofi101@gmail.com</a> directly.
+              Something went wrong. Please email <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pastor.kofi.101@gmail.com" target="_blank" rel="noopener noreferrer">pastor.kofi.101@gmail.com</a> directly.
             </p>
           )}
         </form>
