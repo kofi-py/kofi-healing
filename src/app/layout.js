@@ -25,6 +25,10 @@ const lora = Lora({
 });
 
 export const metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+  ),
   title: 'Healing Prayer — Pastor Kofi',
   description: 'Submit a healing prayer request, read healing scriptures, and request a healing song. Pastor Kofi prays for every request personally.',
   openGraph: {
