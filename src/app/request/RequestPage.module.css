@@ -289,7 +289,23 @@
 
 @media (max-width: 768px) {
   .layout { grid-template-columns: 1fr; }
-  .aside { display: none; }
   .row2 { grid-template-columns: 1fr; }
   .urgencyGroup { flex-direction: column; }
+
+  /* Move trust signals above the form on mobile */
+  .form  { order: 2; }
+  .aside { order: 1; display: flex; flex-direction: row; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.25rem; }
+
+  /* Each trust card becomes a compact horizontal tile */
+  .asideCard {
+    flex: 0 0 auto;
+    width: 160px;
+    padding: 1rem;
+  }
+  .asideIcon { font-size: 18px; margin-bottom: 6px; }
+  .asideCard h4 { font-size: 14px; margin-bottom: 4px; }
+  .asideCard p  { font-size: 12px; }
+
+  /* Hide the verse — save space on small screens */
+  .asideVerse { display: none; }
 }

@@ -89,7 +89,7 @@ export default function HomePage() {
             <div className={styles.aboutPhoto}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/pastor-kofi.jpg"
+                src="/pastor-kofi.png"
                 alt="Pastor Kofi"
                 className={styles.aboutImg}
               />
@@ -131,7 +131,12 @@ export default function HomePage() {
           <div className={styles.cardGrid}>
 
             <Link href="/request" className={styles.card}>
-              <div className={styles.cardIcon}>🙏</div>
+              <div className={styles.cardIcon}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 21C12 21 4 14.5 4 9a8 8 0 0 1 16 0c0 5.5-8 12-8 12z"/>
+                  <circle cx="12" cy="9" r="2.5"/>
+                </svg>
+              </div>
               <h3 className={styles.cardTitle}>Prayer Request</h3>
               <p className={styles.cardDesc}>
                 Submit your healing need. Pastor Kofi will intercede for you personally and respond within 48 hours.
@@ -140,7 +145,14 @@ export default function HomePage() {
             </Link>
 
             <Link href="/scriptures" className={styles.card}>
-              <div className={styles.cardIcon}>📖</div>
+              <div className={styles.cardIcon}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                  <line x1="8" y1="7" x2="16" y2="7"/>
+                  <line x1="8" y1="11" x2="14" y2="11"/>
+                </svg>
+              </div>
               <h3 className={styles.cardTitle}>Healing Scriptures</h3>
               <p className={styles.cardDesc}>
                 12 powerful promises from God's Word about healing — physical, emotional, and spiritual.
@@ -149,7 +161,13 @@ export default function HomePage() {
             </Link>
 
             <Link href="/song" className={styles.card}>
-              <div className={styles.cardIcon}>🎵</div>
+              <div className={styles.cardIcon}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18V5l12-2v13"/>
+                  <circle cx="6" cy="18" r="3"/>
+                  <circle cx="18" cy="16" r="3"/>
+                </svg>
+              </div>
               <h3 className={styles.cardTitle}>Request a Healing Song</h3>
               <p className={styles.cardDesc}>
                 Pastor Kofi will write and record a song specifically for your healing journey and situation.
