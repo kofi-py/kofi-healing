@@ -57,22 +57,22 @@ export default function HomePage() {
       {/* ── How it works ── */}
       <section className={styles.how}>
         <div className={styles.container}>
-          <p className={styles.sectionLabel}>How It Works</p>
-          <h2 className={styles.sectionTitle}>Simple. Personal. Powerful.</h2>
+          <p className={styles.sectionLabel} data-animate>How It Works</p>
+          <h2 className={styles.sectionTitle} data-animate>Simple. Personal. Powerful.</h2>
           <div className={styles.steps}>
-            <div className={styles.step}>
+            <div className={styles.step} data-animate>
               <div className={styles.stepNum}>1</div>
               <h3>Submit Your Request</h3>
               <p>Fill out the form with your name, what needs healing, and how urgent it is. Everything is kept private.</p>
             </div>
             <div className={styles.stepLine}/>
-            <div className={styles.step}>
+            <div className={styles.step} data-animate>
               <div className={styles.stepNum}>2</div>
               <h3>Pastor Kofi Prays</h3>
               <p>Every request goes directly to Pastor Kofi's email. He reads and prays over every single one personally.</p>
             </div>
             <div className={styles.stepLine}/>
-            <div className={styles.step}>
+            <div className={styles.step} data-animate>
               <div className={styles.stepNum}>3</div>
               <h3>You Receive a Response</h3>
               <p>Pastor Kofi responds with a personal prayer, a letter of encouragement, and healing scriptures for your situation.</p>
@@ -86,7 +86,7 @@ export default function HomePage() {
         <div className={styles.container}>
           <div className={styles.aboutGrid}>
 
-            <div className={styles.aboutPhoto}>
+            <div className={styles.aboutPhoto} data-animate="left">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/pastor-kofi.png"
@@ -96,7 +96,7 @@ export default function HomePage() {
               <div className={styles.aboutPhotoAccent} />
             </div>
 
-            <div className={styles.aboutText}>
+            <div className={styles.aboutText} data-animate="right">
               <p className={styles.sectionLabel}>About</p>
               <h2 className={styles.aboutName}>Pastor Kofi</h2>
               <div className={styles.aboutDivider} />
@@ -130,7 +130,7 @@ export default function HomePage() {
         <div className={styles.container}>
           <div className={styles.cardGrid}>
 
-            <Link href="/request" className={styles.card}>
+            <Link href="/request" className={styles.card} data-animate>
               <div className={styles.cardIcon}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 21C12 21 4 14.5 4 9a8 8 0 0 1 16 0c0 5.5-8 12-8 12z"/>
@@ -144,7 +144,7 @@ export default function HomePage() {
               <span className={styles.cardLink}>Submit a Request →</span>
             </Link>
 
-            <Link href="/scriptures" className={styles.card}>
+            <Link href="/scriptures" className={styles.card} data-animate>
               <div className={styles.cardIcon}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -160,7 +160,7 @@ export default function HomePage() {
               <span className={styles.cardLink}>Read the Scriptures →</span>
             </Link>
 
-            <Link href="/song" className={styles.card}>
+            <Link href="/song" className={styles.card} data-animate>
               <div className={styles.cardIcon}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M9 18V5l12-2v13"/>
@@ -182,7 +182,7 @@ export default function HomePage() {
       {/* ── Testimonials ── */}
       <section className={styles.testimonials}>
         <div className={styles.container}>
-          <div className={styles.testimonialInvite}>
+          <div className={styles.testimonialInvite} data-animate>
             <div className={styles.testimonialInviteText}>
               <p className={styles.sectionLabel}>Healing Stories</p>
               <h2 className={styles.testimonialInviteTitle}>
@@ -207,7 +207,7 @@ export default function HomePage() {
 
       {/* ── Featured scripture ── */}
       <section className={styles.featured}>
-        <div className={styles.featuredInner}>
+        <div className={styles.featuredInner} data-animate>
           <p className={styles.featuredLabel}>Promise of God</p>
           <blockquote className={styles.featuredVerse}>
             "But he was pierced for our transgressions, he was crushed for our iniquities;

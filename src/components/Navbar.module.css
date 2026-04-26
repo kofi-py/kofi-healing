@@ -1,6 +1,8 @@
 /* src/components/Navbar.module.css */
 .nav { background: var(--white); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 60px; position: sticky; top: 0; z-index: 100; }
-.brand { display: flex; flex-direction: column; gap: 1px; }
+.brand { display: flex; flex-direction: row; align-items: center; gap: 10px; }
+.brandIcon { flex-shrink: 0; display: block; }
+.brandText { display: flex; flex-direction: column; gap: 1px; }
 .brandName { font-family: var(--font-cormorant), serif; font-size: 17px; color: var(--blue-deep); font-weight: 600; }
 .brandSub { font-family: var(--font-dm-sans), sans-serif; font-size: 10px; letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase; }
 .links { display: flex; gap: 20px; align-items: center; }
